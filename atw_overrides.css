@@ -1,6 +1,6 @@
 /* Top Stuff */
 html {
-    background: #eee;
+    background: #f6f6f6;
 }
 
 #moderatorBar {
@@ -30,28 +30,49 @@ html {
 }
 
 .breadBoxTop {
+    height: 75px;
+    background-size: cover;
     position: relative;
     padding: 0;
-    height: 200px;
     margin: 0;
     background-image: url("http://allthingsweezer.com/styles/xendisconnect/xenforo/logo-monster.png");
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
+    @media only screen and (min-width : 481px) {
+        .breadBoxTop {
+            height: 200px;
+            background-size: contain;
+        }
+    }
 
 .breadBoxTop .topCtrl {
     display: none;
 }
 
 .breadBoxTop .breadcrumb {
-    font-size: 1.1em;
+    
     padding-top: 5px;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
+.breadcrumb .crust a.crumb {
+    font-size: 1.1em;
+    background: rgba(216, 48, 48, 0.76);
+    padding: 5px;
+    text-transform: lowercase;
+    margin: 0;
+    margin-right: 3px;
+    color: white;
+    border-radius: 5px;
+}
 
+a.crumb {}
+
+.breadcrumb .crust a.crumb:after {
+    display: none;
+}
 .breadcrumb .crust:nth-child(2) a.crumb, .breadcrumb .crust.firstVisibleCrumb a.crumb {
     margin-left: 0;
 }
@@ -68,20 +89,7 @@ html {
     display: none;
 }
 
-.breadcrumb .crust a.crumb {
-    background: #d94d4d;
-    padding: 7px;
-    text-transform: lowercase;
-    margin: 0 5px;
-    color: white;
-    border-radius: 5px;
-}
 
-a.crumb {}
-
-.breadcrumb .crust a.crumb:after {
-    display: none;
-}
 
 /* General Page Layout Styles */
 body {}
@@ -91,7 +99,7 @@ body {}
 }
 
 #content .pageContent {
-    padding: 10px;
+    padding: 0 10px;
     background: rgba(255, 255, 255, 0.85);
     opacity: 0.9;
     /*  background-image: url('http://allthingsweezer.com/styles/xendisconnect/xenforo/logo-monster.png');
@@ -150,7 +158,20 @@ body {}
     margin-right: 3px;
     border-radius: 4px;
 }
-
+.PageNav a {
+    border: none;
+    background: none;
+    font-weight: normal;
+}
+.mainContent {
+    margin-right: 0;
+    float: none;
+}
+.mainContainer {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+}
 #twitter-widget-0 {
     background: white;
 }
@@ -161,9 +182,16 @@ body {}
     display: none;
 }
 
-.forum_list .breadBoxTop {
-    height: 162px;
+.forum_view .breadBoxTop {
+    
+
+
 }
+    @media only screen and (min-width : 481px) {
+        .forum_view .breadBoxTop {
+            height: 162px;
+        }
+    }
 
 .prefixListPrefixes {
     display: none;
@@ -201,11 +229,79 @@ body {}
 .discussionListItem {
     background: none;
 }
-
+.discussionListItems .unread .title a{
+    font-weight: normal;
+}
+.discussionListItems .unread .lastPostInfo .username{
+    font-weight: normal;
+}
 .sectionMain {
     background: rgba(255, 255, 255, 0.85);
 }
 
+.forum_view .breadBoxTop {
+    height: 75px;
+    background-size: cover;
+}
+    @media only screen and (min-width : 481px) {
+        .forum_view .breadBoxTop {
+            height: 162px;
+            background-size: contain;
+        }
+    }
+
 .nodeList .categoryForumNodeInfo, .nodeList .forumNodeInfo, .nodeList .pageNodeInfo, .nodeList .linkNodeInfo {
     background: none;
+}
+
+#DiscussionListOptionsHandle{
+    display: none;
+}
+
+
+
+/* Thread / Post list view */
+
+.message .likesSummary {
+    border: none;
+}
+
+.message .dark_postrating.likesSummary, .dark_postrating{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.messageUserBlock div.avatarHolder {
+    background :none;
+}
+
+.messageUserInfo {
+    background: #F0F8FC;
+}
+.messageUserBlock .extraUserInfo{
+    background: none;
+}
+
+.messageInfo.primaryContent{
+    border: none;
+}
+
+.messageList li.message:nth-child(2n){
+
+}.messageList .message {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+}
+.messageUserBlock .arrow span{
+    display: none;
+}
+
+.bbCodeQuote .attribution{
+    background: #eee;
+    border: none;
+    color: #666;
+}
+.bbCodeQuote .quoteContainer{
+    border: none;
+    background: #fff;
 }
