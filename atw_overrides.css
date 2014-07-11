@@ -1,0 +1,211 @@
+/* Top Stuff */
+html {
+    background: #eee;
+}
+
+#moderatorBar {
+    border: none;
+    background: #e6e6e6;
+}
+
+/* Logo and Header Areas */
+#logoBlock {
+    display: none !important;
+}
+
+#headerMover #header {
+    position: relative !important;
+}
+
+#headerMover #headerProxy {
+    height: 0 !important;
+}
+
+#header {
+    display: none;
+}
+
+.crust.homeCrumb {
+    display: none !important;
+}
+
+.breadBoxTop {
+    position: relative;
+    padding: 0;
+    height: 200px;
+    margin: 0;
+    background-image: url("http://allthingsweezer.com/styles/xendisconnect/xenforo/logo-monster.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.breadBoxTop .topCtrl {
+    display: none;
+}
+
+.breadBoxTop .breadcrumb {
+    font-size: 1.1em;
+    padding-top: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.breadcrumb .crust:nth-child(2) a.crumb, .breadcrumb .crust.firstVisibleCrumb a.crumb {
+    margin-left: 0;
+}
+
+.breadcrumb .crust:nth-child(3) {
+    display: none !important;
+}
+
+.breadcrumb .crust:last-child a.crumb {
+    font-weight: normal;
+}
+
+.breadcrumb .jumpMenuTrigger {
+    display: none;
+}
+
+.breadcrumb .crust a.crumb {
+    background: #d94d4d;
+    padding: 7px;
+    text-transform: lowercase;
+    margin: 0 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+a.crumb {}
+
+.breadcrumb .crust a.crumb:after {
+    display: none;
+}
+
+/* General Page Layout Styles */
+body {}
+
+.titleBar {
+    display: none;
+}
+
+#content .pageContent {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    opacity: 0.9;
+    /*  background-image: url('http://allthingsweezer.com/styles/xendisconnect/xenforo/logo-monster.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-attachment: fixed;*/
+}
+
+#content .pageContent:hover {
+    opacity: 1;
+}
+
+.section {
+    margin: 0;
+}
+
+.secondaryContent {
+    border: 0;
+    background: none;
+    padding: 0 10px;
+}
+
+.secondaryContent h3 {
+    display: none;
+}
+
+.sectionMain {
+    padding: 0;
+    margin: 0;
+}
+.aside{
+  clear: both;
+}
+.sidebar .section .primaryContent h3, .sidebar .section .secondaryContent h3, .profilePage .mast .section.infoBlock h3 {
+    background: none;
+    border: none;
+}
+
+/* Forum Home Page */
+.section.membersOnline.userList .listInline:before {
+    content: "Members Online:";
+}
+
+.hashTagCloud .secondaryContent {
+    font-size: 0;
+}
+
+.hashTagCloud .secondaryContent a {
+    background: #d94d4d;
+    color: white;
+    padding: 5px;
+    line-height: 2;
+    display: inline;
+    font-size: 14px;
+    margin-right: 3px;
+    border-radius: 4px;
+}
+
+#twitter-widget-0 {
+    background: white;
+}
+
+/* Forum Listing Pages */
+
+.forum_list .breadcrumb {
+    display: none;
+}
+
+.forum_list .breadBoxTop {
+    height: 162px;
+}
+
+.prefixListPrefixes {
+    display: none;
+}
+
+.nodeListNewDiscussionButton {
+    display: none;
+}
+
+.pageNavLinkGroup {
+    /*display: none;*/
+}
+
+.sectionHeaders {
+    display: none;
+}
+
+.discussionList .sectionHeaders {
+    display: none;
+}
+
+.node.category.level_1.node_3 .categoryStrip {
+    display: none;
+}
+
+.node .forumNodeInfo.unread .nodeIcon, .node .categoryForumNodeInfo.unread .nodeIcon{
+  margin-left : 0;
+}
+
+/* Thread Listing Pages */
+.discussionListItem .posterAvatar .avatar {
+    padding: 0;
+}
+
+.discussionListItem {
+    background: none;
+}
+
+.sectionMain {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.nodeList .categoryForumNodeInfo, .nodeList .forumNodeInfo, .nodeList .pageNodeInfo, .nodeList .linkNodeInfo {
+    background: none;
+}
