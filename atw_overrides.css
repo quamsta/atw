@@ -34,9 +34,7 @@ html {
 #content .pageContent{
     padding: 0;
 }
-.crust.homeCrumb {
-    display: none !important;
-}
+
 
 .breadBoxTop {
     height: 75px;
@@ -88,9 +86,11 @@ a.crumb {}
 }
 
 .breadcrumb .crust:nth-child(3) {
-    display: none !important;
+   /* display: none !important;*/
 }
-
+.crust.homeCrumb {
+    /*display: none !important;*/
+}
 .breadcrumb .crust:last-child a.crumb {
     font-weight: normal;
 }
@@ -139,6 +139,10 @@ body {}
     background: none;
     border: none;
 }
+.sidebar{
+    width: auto;
+    float: none;
+}
 
 /* Forum Home Page */
 .section.membersOnline.userList .listInline:before {
@@ -177,9 +181,30 @@ body {}
     background: white;
 }
 
+.section.visitorPanel{
+    display: none;
+}
+
+.section.staffOnline{
+    display: none;
+}
+
+.section.membersOnline.userList{
+    display: none;
+}
+
+.section.infoBlock.sharePage {
+    display: none;
+}
+
+.secondaryContent.statsList{
+    display: none;
+}
 .footer .pageContent{
     display: none;
 }
+
+
 
 /* Forum Listing Pages */
 
@@ -188,8 +213,6 @@ body {}
 }
 
 .forum_view .breadBoxTop {
-    
-
 
 }
     @media only screen and (min-width : 481px) {
@@ -218,14 +241,15 @@ body {}
     display: none;
 }
 
-.node.category.level_1.node_3 .categoryStrip {
+.categoryStrip {
     display: none;
 }
-
 .node .forumNodeInfo.unread .nodeIcon, .node .categoryForumNodeInfo.unread .nodeIcon{
   margin-left : 0;
 }
-
+.nodeList .node.level_1{
+    margin-bottom:0;
+}
 /* Thread Listing Pages */
 .discussionListItem .posterAvatar, .discussionListItem .stats{
     background: none;
