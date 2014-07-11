@@ -269,14 +269,6 @@ iframe {
     display: none;
 }
 
-.pageNavLinkGroup {
-    display: none;
-}
-
-.pageNavLinkGroup.afterDiscussionListHandle {
-    display: block;
-}
-
 .sectionHeaders {
     display: none;
 }
@@ -385,7 +377,9 @@ iframe {
 .messageUserBlock div.avatarHolder {
     background: none;
 }
-
+.messageUserBlock a.username {
+    line-height: 1.2;
+}
 @media only screen and (min-width: 481px) {
     .messageLeft {
         background: #F0F8FC;
