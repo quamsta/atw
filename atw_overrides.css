@@ -81,15 +81,15 @@ a.crumb {}
 .breadcrumb .crust a.crumb:after {
     display: none;
 }
-.breadcrumb .crust:nth-child(2) a.crumb, .breadcrumb .crust.firstVisibleCrumb a.crumb {
+ .breadcrumb .crust:nth-child(2) a.crumb, .breadcrumb .crust.firstVisibleCrumb a.crumb {
     margin-left: 0;
 }
 
 .breadcrumb .crust:nth-child(3) {
-   /* display: none !important;*/
+   display: none !important;
 }
-.crust.homeCrumb {
-    /*display: none !important;*/
+.forum_view .crust.homeCrumb, .thread_view .crust.homeCrumb {
+    display: none !important;
 }
 .breadcrumb .crust:last-child a.crumb {
     font-weight: normal;
