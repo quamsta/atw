@@ -124,9 +124,6 @@ body {}
     padding: 0 10px;
 }
 
-.secondaryContent h3 {
-    display: none;
-}
 
 .sectionMain {
     padding: 0;
@@ -148,11 +145,15 @@ body {}
 .section.membersOnline.userList .listInline:before {
     content: "Members Online:";
 }
-
+.hashTagCloud {
+    margin-top: 10px;
+}
 .hashTagCloud .secondaryContent {
     font-size: 0;
 }
-
+.hashTagCloud h3 {
+    display: none;
+}
 .hashTagCloud .secondaryContent a {
     background: #d94d4d;
     color: white;
