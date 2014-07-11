@@ -105,7 +105,11 @@ a.crumb {}
 body {}
 
 .titleBar {
-    display: none;
+    padding: 10px 0;
+}
+
+.titlebar h1{
+    font-size: 22px;
 }
 .button {
     font-weight: normal;
@@ -209,6 +213,7 @@ body {}
 
 /* Forum Listing Pages */
 
+
 .forum_list .breadcrumb {
     display: none;
 }
@@ -251,7 +256,7 @@ body {}
 .nodeList .node.level_1{
     margin-bottom:0;
 }
-/* Thread Listing Pages */
+
 .discussionListItem .posterAvatar, .discussionListItem .stats{
     background: none;
 }
