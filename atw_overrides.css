@@ -9,17 +9,26 @@ html {
 
 #moderatorBar {
     border: none !important;
-    background: #F6F6F6 !important;
+    background: none !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
 }
 
 #moderatorBar .visitorTabs {
-    float: none;
+    padding-right: 7px;
 }
 
 #moderatorBar .visitorTabs a {
     font-weight: normal;
 }
-
+#moderatorBar .pageWidth a, #moderatorBar .pageWidth .itemCount{
+    background-color: rgba(218, 28, 58, 0.93);
+    margin-right: 4px;
+    color: white;
+}
 /* Logo and Header Areas */
 #logoBlock {
     display: none !important;
@@ -45,18 +54,19 @@ html {
 
 .breadBoxTop {
     height: 75px;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     padding: 0;
     margin: 0;
     background-image: url("http://allthingsweezer.com/styles/xendisconnect/xenforo/logo-monster.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-color: rgb(54, 178, 226);
 }
 
 @media only screen and (min-width: 481px) {
     .breadBoxTop {
-        height: 200px;
+        height: 220px;
         /*background-size: contain;*/
     }
 }
@@ -69,14 +79,14 @@ html {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: rgba(241, 241, 241, 0.7);
+    background: rgba(19, 101, 148, 0.29);
     padding: 5px 0;
 }
 
 .breadcrumb .crust a.crumb {
     font-size: 1.1em;
     background: rgb(216, 48, 48);
-    padding: 5px;
+    padding: 2px 8px;
     text-transform: lowercase;
     margin: 0;
     margin-right: 3px;
@@ -85,7 +95,6 @@ html {
 }
 .breadcrumb .crust:hover a.crumb{
     color: #CECECE;
-    font-weight: bold;
 }
 
 .breadcrumb .crust a.crumb:after {
@@ -124,10 +133,6 @@ body {}
     border: none;
 }
 
-iframe {
-    display: block;
-    padding: 10px 0;
-}
 
 .titleBar {
     padding: 10px 0;
@@ -365,6 +370,10 @@ iframe {
 
 .message .likesSummary {
     border: none;
+}
+.message iframe {
+    display: block;
+    padding: 10px 0;
 }
 
 .message .dark_postrating.likesSummary, .dark_postrating {
